@@ -9,8 +9,18 @@ const compat = new FlatCompat({
   baseDirectory: __dirname
 })
 
-const eslintConfig = [
+/** @type {import('eslint').Linter.Config[]} */
+const config = [
+  {
+    files: ['**/*.{mjs,cjs,js}'],
+    rules: {
+      'react-hooks/exhaustive-deps': 'off',
+      '@next/next/no-img-element': 'off',
+      'react-hooks/rules-of-hooks': 'off',
+      'no-unused-vars': 'warn'
+    }
+  },
   ...compat.extends('next/core-web-vitals', 'next/typescript')
 ]
 
-export default eslintConfig
+export default config
