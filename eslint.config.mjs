@@ -12,7 +12,7 @@ const compat = new FlatCompat({
 /** @type {import('eslint').Linter.Config[]} */
 const config = [
   {
-    files: ['**/*.{mjs,cjs,js}'],
+    files: ['**/*.{mjs,cjs,js,tsx,ts}'],
     rules: {
       'react-hooks/exhaustive-deps': 'off',
       '@next/next/no-img-element': 'off',

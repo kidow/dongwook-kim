@@ -1,9 +1,10 @@
-import { Header, Layout } from 'components'
+import { Header } from 'components'
 
 export default function Page(): React.ReactElement {
   return (
-    <Layout.Paper>
+    <>
       <Header title="Dongwook Kim" description="Front-end Developer" />
-    </Layout.Paper>
+      <div>asd</div>
+    </>
   )
 }
