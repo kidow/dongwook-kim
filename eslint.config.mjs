@@ -17,7 +17,7 @@ const config = [
       'react-hooks/exhaustive-deps': 'off',
       '@next/next/no-img-element': 'off',
       'react-hooks/rules-of-hooks': 'off',
-      'no-unused-vars': 'warn'
+      '@typescript-eslint/no-unused-vars': 'warn'
     }
   },
   ...compat.extends('next/core-web-vitals', 'next/typescript')
