@@ -5,9 +5,9 @@ interface Props {
 
 function Header({ title, description }: Props): React.ReactElement {
   return (
-    <header>
-      <h1 className="text-light-primary font-semibold">{title}</h1>
-      <h2 className="text-light-secondary font-medium">{description}</h2>
+    <header className="mb-20">
+      <h1 className="font-medium text-light-primary">{title}</h1>
+      <h2 className="font-medium text-light-secondary">{description}</h2>
     </header>
   )
 }

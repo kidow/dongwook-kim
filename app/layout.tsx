@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: ReactProps) {
   return (
-    <html lang="ko">
+    <html lang="ko" className="dark:bg-dark">
       <body
         className={cn(geistSans.variable, geistMono.variable, 'antialiased')}
       >
